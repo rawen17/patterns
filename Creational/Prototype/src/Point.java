@@ -12,7 +12,7 @@ public class Point implements Prototype {
     }
 
     @Override
-    public Prototype Clone() {
+    public Point Clone() {
         return new Point(this);
     }
 

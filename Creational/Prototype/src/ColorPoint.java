@@ -10,7 +10,7 @@ public class ColorPoint extends Point implements Prototype {
         this(p.x, p.y, p.color);
     }
 
-    public Prototype Clone() {
+    public ColorPoint Clone() {
         return new ColorPoint(this);
     }
 

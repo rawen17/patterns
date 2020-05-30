@@ -13,7 +13,7 @@ public class Program {
     }
 
     public static Point createPoint() {
-        return (Point) DEFAULT_POINT.Clone();
+        return DEFAULT_POINT.Clone();
     }
 
     public static void main(String[] args) {
