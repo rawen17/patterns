@@ -1,0 +1,26 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Program {
+    static final Point DEFAULT_POINT = new Point(0,0);
+
+    static Map<String, Prototype> protos;
+    static {
+        protos = new HashMap<String, Prototype>();
+        protos.put("default", new ColorPoint(0,0, "black"));
+        protos.put("red", new ColorPoint(0,0, "red"));
+        protos.put("green", new ColorPoint(0,0, "green"));
+    }
+
+    public static Point createPoint() {
+        return (Point) DEFAULT_POINT.Clone();
+    }
+
+    public static void main(String[] args) {
+        Point p = createPoint();
+        System.out.println(p);
+
+        Prototype red = Prototype.createRedPoint();
+        System.out.println(red);
+    }
+}
