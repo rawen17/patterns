@@ -18,17 +18,17 @@ public class Program {
             ui.login("Max");
             ui.drawInterface();
         }
-//        {
-//            Database db = new MicrosoftSQLDB();
-//            UserInterface ui = new UserInterface(db);
-//            ui.login("Max");
-//            ui.drawInterface();
-//        }
-//        {
-//            Database db = new MicrosoftSQLDB();
-//            UserInterface ui = new AdminInterface(db);
-//            ui.login("Max");
-//            ui.drawInterface();
-//        }
+        {
+            Database db = new MicrosoftSQLDB();
+            UserInterface ui = new UserInterface(db);
+            ui.login("Max");
+            ui.drawInterface();
+        }
+        {
+            Database db = new MicrosoftSQLDB();
+            UserInterface ui = new AdminInterface(db);
+            ui.login("Max");
+            ui.drawInterface();
+        }
     }
 }
